@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html>
+  
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="”X-UA-Compatible”" content="”IE" ="edge”" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <link rel="stylesheet" href="index.css" />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="myjQuery.js"></script>
+      <script
+        src="https://kit.fontawesome.com/20c5629a29.js"
+        crossorigin="anonymous"
+      ></script>
+    </head>
+  
+  <body>
+    <div class="bg-container">
+      <div class="sidebar">
+        
+            <img src="./Assets/Screenshot 2023-09-16 123004.png" class="logo" />
+          
+        
+        <div class="inner-div-sidebar" id="dashboards">
+          <div>
+            <i class="fa fa-envelope-open-o" aria-hidden="true"></i>
+            <p>Dashboards</p>
+
+            <p class="number">3</p>
+          </div>
+
+          <i class="fa fa-angle-right" aria-hidden="true"></i>
+          <i class="fa fa-angle-down" aria-hidden="true"></i>
+        </div>
+        <div class="inner-div-sidebar home-page">
+          <p>Home Page</p>
+        </div>
+        <div class="inner-div-sidebar table-page">
+          <p>Table Page</p>
+        </div>
+        <div class="inner-div-sidebar graph-page">
+          <p>Graph Page</p>
+        </div>
+
+        <div class="inner-div-sidebar">
+          <div>
+            <i class="fa fa-trello" aria-hidden="true"></i>
+            <p>Layouts</p>
+          </div>
+          <i class="fa fa-angle-right" aria-hidden="true"></i>
+        </div>
+        <div class="inner-div-sidebar">
+          <div>
+            <i class="fa fa-files-o" aria-hidden="true"></i>
+            <p>Front Pages</p>
+          </div>
+          <i class="fa fa-angle-right" aria-hidden="true"></i>
+        </div>
+        <p class="sub-head">Apps & Pages</p>
+        <div class="inner-div-sidebar">
+          <div>
+            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            <p>Email</p>
+          </div>
+        </div>
+        <div class="inner-div-sidebar">
+          <div>
+            <i class="fa fa-comments" aria-hidden="true"></i>
+            <p>Chat</p>
+          </div>
+        </div>
+        <div class="inner-div-sidebar">
+          <div>
+            <i class="fa fa-calendar-minus-o" aria-hidden="true"></i>
+            <p>Calander</p>
+          </div>
+        </div>
+        <div class="inner-div-sidebar">
+          <div>
+            <i class="fa fa-tasks" aria-hidden="true"></i>
+            <p>Kanban</p>
+          </div>
+        </div>
+        <div class="inner-div-sidebar">
+          <div>
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            <p>eCommerce</p>
+          </div>
+          <i class="fa fa-angle-right" aria-hidden="true"></i>
+        </div>
+
+        <div class="inner-div-sidebar">
+          <div>
+            <i class="fa fa-book" aria-hidden="true"></i>
+            <p>Academy</p>
+          </div>
+          <i class="fa fa-angle-right" aria-hidden="true"></i>
+        </div>
+
+        <div class="inner-div-sidebar">
+          <div>
+            <i class="fa fa-truck" aria-hidden="true"></i>
+            <p>Logistics</p>
+          </div>
+          <i class="fa fa-angle-right" aria-hidden="true"></i>
+        </div>
+
+        <div class="inner-div-sidebar">
+          <div>
+            <i class="fa fa-file-o" aria-hidden="true"></i>
+            <p>Invoice</p>
+          </div>
+          <i class="fa fa-angle-right" aria-hidden="true"></i>
+        </div>
+        <div class="inner-div-sidebar">
+          <div>
+            <i class="fa fa-users" aria-hidden="true"></i>
+            <p>Users</p>
+          </div>
+          <i class="fa fa-angle-right" aria-hidden="true"></i>
+        </div>
+        <div class="inner-div-sidebar">
+          <div>
+            <i class="fa fa-cog" aria-hidden="true"></i>
+            <p>Roles & Permissions</p>
+          </div>
+          <i class="fa fa-angle-right" aria-hidden="true"></i>
+        </div>
+        <div class="inner-div-sidebar">
+          <div>
+            <i class="fa fa-file-o" aria-hidden="true"></i>
+            <p>Pages</p>
+          </div>
+          <i class="fa fa-angle-right" aria-hidden="true"></i>
+        </div>
+        <div class="inner-div-sidebar">
+          <div>
+            <i class="fa fa-lock" aria-hidden="true"></i>
+            <p>Authentication</p>
+          </div>
+          <i class="fa fa-angle-right" aria-hidden="true"></i>
+        </div>
+        <div class="inner-div-sidebar">
+          <div>
+            <i class="fa fa-window-maximize" aria-hidden="true"></i>
+            <p>Wizard Example</p>
+          </div>
+          <i class="fa fa-angle-right" aria-hidden="true"></i>
+        </div>
+        <div class="inner-div-sidebar">
+          <div>
+            <i class="fa fa-square-o" aria-hidden="true"></i>
+            <p>Modal Examples</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="header">
+          <div class="side-menu">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+            
+          </div>
+          <div class="close">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </div>
+          <input type="search" placeholder="Search" />
+          <div class="icon-con">
+            <i class="fa fa-language" aria-hidden="true"></i>
+            <i class="fa fa-moon-o" aria-hidden="true"></i>
+            <i class="fa fa-th-large" aria-hidden="true"></i>
+            <i class="fa fa-bell" aria-hidden="true"></i>
+            <i class="fa fa-user-circle user" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="main" id="home-page">
+          
+          <div class="inner-div">
+            <div class="head-div">
+              <div>
+                <h1>Earning Reports</h1>
+                <p>Weekly Earnings Overview</p>
+              </div>
+              <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+            </div>
+            <div class="main-inner-div">
+              <div>
+                <div class="num-div">
+                  <h1>$468</h1>
+                  <p class="per">+4.2%</p>
+                </div>
+                <p>You informed of this week compared to last week</p>
+              </div>
+              <div>
+                <img
+                  class="image"
+                  src="./Assets/Screenshot 2023-09-16 152358.png"
+                />
+              </div>
+            </div>
+            <div class="footer-inner-div">
+              <div class="div">
+                <div class="num-div">
+                  <i class="fa fa-usd earnings-icon" aria-hidden="true"></i>
+                  <p>Earnings</p>
+                </div>
+                <h1>$545.69</h1>
+              </div>
+              <div class="div">
+                <div class="num-div">
+                  <i
+                    class="fa fa-pie-chart earnings-icon profit"
+                    aria-hidden="true"
+                  ></i>
+                  <p>Profit</p>
+                </div>
+                <h1>$256.34</h1>
+              </div>
+              <div class="div">
+                <div class="num-div">
+                  <i
+                    class="fa fa-paypal earnings-icon expense"
+                    aria-hidden="true"
+                  ></i>
+                  <p>Expense</p>
+                </div>
+                <h1>$74.19</h1>
+              </div>
+            </div>
+          </div>
+          <div class="inner-div">
+            <div class="head-div">
+              <div>
+                <h1>Support Tracker</h1>
+                <p>Last 7 Days</p>
+              </div>
+              <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+            </div>
+            <div class="main-inner-div">
+              <div class="tickets-div-main">
+                <div>
+                  <h1>164</h1>
+                  <p>Total Tickets</p>
+                </div>
+                <div class="tickets-div">
+                  <i class="fa fa-ticket earnings-icon" aria-hidden="true";></i>
+                  <div>
+                    <h1>New Tickets</h>
+                    <p>142</p>
+  
+                  </div>
+                </div>
+                <div class="tickets-div">
+                  <i class="fa fa-check-circle-o earnings-icon profit" aria-hidden="true"></i>
+                  <div>
+                    <h1>Open Tickets</h1>
+                    <p>28</p>
+  
+                  </div>
+                </div>
+                <div class="tickets-div">
+                  <i class="fa fa-clock-o earnings-icon expense" aria-hidden="true"></i>
+                  <div>
+                    <h1>Response Time</h1>
+                    <p>1 Day</p>
+  
+                  </div>
+                </div>
+              </div>
+              <div>
+                <img
+                  class="image"
+                  src="./Assets/Screenshot 2023-09-16 153505.png"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="inner-div-2">
+            <div class="head-div">
+              <div>
+                <h1>Sales by Countries</h1>
+                <p>Monthly Sales Overview</p>
+              </div>
+              <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+            </div>
+            <div class="head-div">
+              <div class="num-div">
+                <img src="Assets/Screenshot 2023-09-16 181951.png" class="country-logo"/>
+                <div>
+                  <h1>$8,567k</h1>
+                  <p>United States</p>
+                </div>
+              </div>
+              <p class="green"><i class="fa fa-angle-up" aria-hidden="true"></i>25.8%</p>
+            </div>
+            <div class="head-div">
+              <div class="num-div">
+                <img src="Assets/Screenshot 2023-09-16 182032.png" class="country-logo"/>
+                <div>
+                  <h1>$2,415k</h1>
+                  <p>Brazil</p>
+                </div>
+              </div>
+              <p class="red"><i class="fa fa-angle-down" aria-hidden="true"></i>6.2%</p>
+            </div>
+            <div class="head-div">
+              <div class="num-div">
+                <img src="Assets/Screenshot 2023-09-16 182056.png" class="country-logo"/>
+                <div>
+                  <h1>$865k</h1>
+                  <p>India</p>
+                </div>
+              </div>
+              <p class="green"><i class="fa fa-angle-up" aria-hidden="true"></i>12.4%</p>
+            </div>
+            <div class="head-div">
+              <div class="num-div">
+                <img src="Assets/Screenshot 2023-09-16 182125.png" class="country-logo"/>
+                <div>
+                  <h1>$745k</h1>
+                  <p>Australia</p>
+                </div>
+              </div>
+              <p class="red"><i class="fa fa-angle-down" aria-hidden="true"></i>11.9%</p>
+            </div>
+            
+            
+          </div>
+          <div class="inner-div-2">
+            <div class="head-div">
+              <div>
+                <h1>Total Earning</h1>
+                <h1>87% <span class="green"><i class="fa fa-angle-up" aria-hidden="true"></i>25.8%</span></h1>
+              </div>
+              <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+            </div>
+            <img src="Assets/Screenshot 2023-09-16 183800.png" class="image"/>
+            
+          
+            
+            
+            
+          </div>
+          <div class="inner-div-2">
+            <div class="head-div">
+              <div>
+                <h1>Monthly Campaign State</h1>
+                <p>8.52k Social Visiters</p>
+              </div>
+              <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+            </div>
+            <div class="head-div">
+              <div class="num-div">
+                <i class="fa fa-envelope-o earnings-icon green-bg" aria-hidden="true"></i>
+                <p>Emails</p>
+              </div>
+              <p>12,346 <span class="green">0.3%</span></p>
+            </div>
+            <div class="head-div">
+              <div class="num-div">
+                <i class="fa fa-link earnings-icon profit" aria-hidden="true"></i>
+                <p>Opened</p>
+              </div>
+              <p>8,734 <span class="green">2.1%</span></p>
+            </div>
+            <div class="head-div">
+              <div class="num-div">
+                <i class="fa fa-arrow-up earnings-icon expense" aria-hidden="true"></i>
+                <p>Clicked</p>
+              </div>
+              <p>967 <span class="green">1.4%</span></p>
+            </div>
+            <div class="head-div">
+              <div class="num-div">
+                <i class="fa fa-user-plus earnings-icon " aria-hidden="true"></i>
+                <p>Subscribe</p>
+              </div>
+              <p>345 <span class="green">2.1%</span></p>
+            </div>
+            
+            
+            
+          </div>
+        </div>
+
+        <!--Table Page-->
+
+        <div class="main" id="table-page">
+          <div>
+            <div class="table-div">
+              <h1>Data Table with Buttons</h1>
+              <div class="num-div">
+                <p class="export-button"><i class="fa fa-file" aria-hidden="true"></i>Export <i class="fa fa-angle-down" aria-hidden="true"></i></p>
+                <p class="export-button add-new">+ Add New Record</p>
+              </div>
+      
+            </div>
+            <div class="table-div">
+              <div class="num-div">
+                <p>Show</p>
+                <p class="entries">7 <i class="fa fa-angle-down" aria-hidden="true"></i></p>
+                <p>Entries</p>
+      
+              </div>
+              <div class="num-div">
+                <p>Search</p>
+                <input type="search"/>
+              </div>
+            </div>
+          </div>
+    
+          <div class="table-con">
+            <table id="table">
+              <thead>
+                <tr>
+                  <th><i class="fa fa-square-o" aria-hidden="true"></i></th>
+                  <th>NAME</th>
+                  <th>EMAIL</th>
+                  <th>DATE</th>
+                  <th>SALARY</th>
+                  <th>STATUS</th>
+                  <th>ACTIONS</th>
+                </tr>
+              </thead>
+              <tbody>
+      
+              </tbody>
+              
+             
+            
+              
+            </table>
+            <div class="pagination" id="pagination" >
+              <p>Previous</p>
+              <p class="1">1</p>
+              <p>2</p>
+              <p>3</p>
+              <p>4</p>
+              
+              <p>Next</p>
+            </div>
+          </div>
+        </div>
+
+        <!--Graph Page-->
+        <div id="graph-page">
+          <h1>Charts</h1>
+       <div class="main">
+        
+        <div class="inner-div1">
+          <h1> Latest Statistics</h1>
+          <div>
+            <canvas id="myChart"></canvas>
+          </div>
+          
+          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+          
+          <script>
+            const ctx = document.getElementById('myChart');
+          
+            new Chart(ctx, {
+              type: 'bar',
+              data: {
+                labels: ['7/12', '8/12', '9/12', '10/12', '11/12', '12/12','13/12','14/12','15/12','16/12'],
+                datasets: [{
+                  label: 'Balance',
+                  data: [300,220,120,130,400,300,250,340,290,401,440],
+                  borderWidth: 1,
+                  barThickness:8,
+                 
+                }]
+              },
+              options: {
+                scales: {
+                  y: {
+                    beginAtZero: true
+                  }
+                }
+              }
+            });
+          </script>
+          
+         </div>
+         <div class="inner-div1">
+          <h1>Statistics in Line Chart</h1>
+          <div>
+            <canvas id="myChart2"></canvas>
+          </div>
+          
+          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+          
+          <script>
+            const ctx2 = document.getElementById('myChart2');
+          
+            new Chart(ctx2, {
+              type: 'line',
+              data: {
+                labels: ['7/12', '8/12', '9/12', '10/12', '11/12', '12/12','13/12','14/12','15/12','16/12'],
+                datasets: [{
+                  label: 'Balance',
+                  data: [300,220,120,130,400,300,250,340,290,401,440],
+                  borderWidth: 1,
+                  barThickness:10,
+                }]
+              },
+              options: {
+                scales: {
+                  y: {
+                    beginAtZero: true
+                  }
+                }
+              }
+            });
+          </script>
+          
+         </div>
+         <div class="inner-div1">
+          <h1>Statistics in Pie form</h1>
+          <div>
+            <canvas id="myChart1"></canvas>
+          </div>
+          
+          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+          
+          <script>
+            const ctx1= document.getElementById('myChart1');
+          
+            new Chart(ctx1, {
+              type: 'doughnut',
+              data: {
+                labels: ['7/12', '8/12', '9/12', '10/12', '11/12', '12/12','13/12','14/12','15/12','16/12'],
+                datasets: [{
+                  label: 'Balance',
+                  data: [300,220,120,130,400,300,250,340,290,401,440],
+                  borderWidth: 1,
+                  barThickness:10,
+                }]
+              },
+              options: {
+                scales: {
+                  y: {
+                    beginAtZero: true
+                  }
+                }
+              }
+            });
+          </script>
+          
+         </div>
+         
+         <div class="inner-div1">
+          <h1>Statistics in Radar Chart</h1>
+          <div>
+            <canvas id="myChart3"></canvas>
+          </div>
+          
+          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+          
+          <script>
+            const ctx3 = document.getElementById('myChart3');
+          
+            new Chart(ctx3, {
+              type: 'polarArea',
+              data: {
+                labels: ['7/12', '8/12', '9/12', '10/12', '11/12', '12/12','13/12','14/12','15/12','16/12'],
+                datasets: [{
+                  label: 'Balance',
+                  data: [300,220,120,130,400,300,250,340,290,401,440],
+                  borderWidth: 1,
+                  barThickness:10,
+                }]
+              },
+              options: {
+                scales: {
+                  y: {
+                    beginAtZero: true
+                  }
+                }
+              }
+            });
+          </script>
+          
+         </div>
+       </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  
+<script src="/myjQuery.js"></script>
+
+
+</html>
